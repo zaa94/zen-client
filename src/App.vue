@@ -6,6 +6,7 @@
 </template>
 
 <script>
+import sassStyles from '@/components/chat/alt_chat_css.module.scss'
 import topBar from "@/components/window/topBar";
 
 export default {

@@ -4,11 +4,16 @@
     style="z-index: 9999 !important; background: rgb(225, 226, 232)"
   >
     <div class="absolute bottom-0 right-0 px-4 w-full">
+      <a href="javascript:;" class="write-link attach"></a>
+                
+                
       <textarea
         @keydown.enter="enter"
         v-model="msg"
         class="w-full outline-none h-auto bg-transparent text-gray-800 font-book"
       ></textarea>
+      <a href="javascript:;" class="write-link smiley"></a>
+      <a href="javascript:;" class="write-link send"></a>
     </div>
   </div>
 </template>

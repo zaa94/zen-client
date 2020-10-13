@@ -207,15 +207,15 @@ const store = new Vuex.Store({
       state.messages = p.data;
 
       if (p.data[0]) {
-        if (state.previews.filter(x => x.id == p.data[0].handle).length == 0) {
+        if (state.previews.filter(x => x.guid == p.data[0].chat_handle_id).length == 0) {
           state.previews.push({
-            id: p.data[0].handle,
+            id: p.data[0].chat_handle_id,
             text: p.data[0].text,
             date: fromAppleTime(p.data[0].date)
           });
         } else {
           state.previews.forEach(x => {
-            if (x.id == p.data[0].handle) {
+            if (x.guid == p.data[0].chat_handle_id) {
               p.text = p.data[0].text;
             }
           });

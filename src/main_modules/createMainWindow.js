@@ -47,7 +47,7 @@ const createMainWindow = async (app, loading) => {
 
   window.on("minimize", function(event) {
     event.preventDefault();
-    window.hide();
+    window.minimize();
   });
 
   return window;

@@ -8,6 +8,7 @@
     "
   >
     <div class="px-3 flex justify-between w-full">
+      <!-- PHONE NUMBER IDENTIFIER -->
       <span class="truncate my-auto">{{ identifier }}</span>
       <span class="my-auto text-xs opacity-50">{{ lastMessageTime }}</span>
     </div>
@@ -102,6 +103,7 @@ export default {
 <style>
 .person-tile {
   transition: all 140ms ease;
+  background-color: cyan;
 }
 
 ::-webkit-scrollbar {
